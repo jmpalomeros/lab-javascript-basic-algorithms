@@ -37,7 +37,8 @@ console.log(newHackers1.toUpperCase().substring(0,newHackers1.length -1))
 
 
 let newHackers2 = ""
-for(let i=0;i<hackers2.length;i=i+1){
+
+for(let i=hackers2.length -1 ; i>=0; i--){
      
     newHackers2 += (hackers2[i])
     
