@@ -25,7 +25,7 @@ if (long1===long2){
     
 // Iteration 3: Loops
 
-
+//3.1
 
 let newHackers1 = ""
 
@@ -35,6 +35,7 @@ for(let i=0;i<hackers1.length; i = i+1){
 }
 console.log(newHackers1.toUpperCase().substring(0,newHackers1.length -1))
 
+//3.2
 
 let newHackers2 = ""
 
@@ -44,6 +45,48 @@ for(let i=hackers2.length -1 ; i>=0; i--){
     
 }
 console.log(newHackers2)
+
+
+//3.3
+
+/*tal vez no entedí bien el ejercicio, creo que tengo que imprimir en el str más corto*/
+
+let firstStr = "The driver's name goes first."
+let secondStr = "Yo, the navigator goes first definitely."
+let thirdStr = "What?! You both have the same name?"
+
+let letterFirstStr = ""
+
+for(let i=0; i<firstStr.length;i++){
+    letterFirstStr+=(firstStr[i])
+}
+
+
+let letterSecondStr = ""
+
+for(let i=0; i<secondStr.length;i++){
+    letterSecondStr+=(secondStr[i])
+}
+
+
+let letterThirdStr = ""
+
+for(let i=0; i<thirdStr.length;i++){
+    letterThirdStr+=(thirdStr[i])
+}
+
+
+if (letterFirstStr< letterSecondStr && letterFirstStr < letterThirdStr){
+    console.log(firstStr)}
+
+    else if (letterSecondStr<letterFirstStr && letterSecondStr <letterThirdStr){
+        console.log(secondStr)
+    }
+
+    else if (letterThirdStr<letterFirstStr && letterThirdStr <letterSecondStr){
+        console.log(thirdStr)
+    }
+
 
 
 
